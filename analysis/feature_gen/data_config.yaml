@@ -1,0 +1,20 @@
+root: data_process
+dataset: ase
+dataset_file_name: <path-to-dataset>
+ase_args:
+  format: extxyz
+chemical_symbol_to_type:
+  Cs: 0
+  H: 1
+  P: 2
+  O: 3 
+## other way of writing 
+# chemical_symbols:
+#  - Cs
+#  - H
+#  - P
+#  - O
+
+## command:
+## root is for storing processed dataset
+## nequip-evaluate --train-dir <train_model_dir> --dataset-config data_config.yaml --batch-size 1 --output <output.xyz> --output-fields edge_features,edge_index,edge_energy
